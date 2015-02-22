@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>src\router\RESTfulStyle.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Array.html">Array</a></li>
+            
+                <li><a href="../classes/Browser.html">Browser</a></li>
+            
+                <li><a href="../classes/Canvas.html">Canvas</a></li>
+            
+                <li><a href="../classes/Css.html">Css</a></li>
+            
+                <li><a href="../classes/EvtQueue.html">EvtQueue</a></li>
+            
+                <li><a href="../classes/Fn.html">Fn</a></li>
+            
+                <li><a href="../classes/fx.html">fx</a></li>
+            
+                <li><a href="../classes/IFrame.html">IFrame</a></li>
+            
+                <li><a href="../classes/lpp.html">lpp</a></li>
+            
+                <li><a href="../classes/Math.html">Math</a></li>
+            
+                <li><a href="../classes/Polyline.html">Polyline</a></li>
+            
+                <li><a href="../classes/Scene.html">Scene</a></li>
+            
+                <li><a href="../classes/shim.html">shim</a></li>
+            
+                <li><a href="../classes/Spirit.html">Spirit</a></li>
+            
+                <li><a href="../classes/Stage.html">Stage</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/base.html">base</a></li>
+            
+                <li><a href="../modules/fx.html">fx</a></li>
+            
+                <li><a href="../modules/lpp.html">lpp</a></li>
+            
+                <li><a href="../modules/movie.html">movie</a></li>
+            
+                <li><a href="../modules/Polyline.html">Polyline</a></li>
+            
+                <li><a href="../modules/router.html">router</a></li>
+            
+                <li><a href="../modules/vml.html">vml</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: src\router\RESTfulStyle.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+define(function(require, exports, module){
+  var _utils = {};
+  _utils.str = require(&#x27;../lib/Str&#x27;);
+  _utils.array = require(&#x27;../lib/Array&#x27;);
+  _utils.isRegExp = function(el){
+    return Object.prototype.toString.apply(el) === &#x27;[object RegExp]&#x27;;
+  };
+
+  /** 浅对象复制
+   * @param {Object} obj
+   * @returns {Object}
+   */ 
+  var _clone = function(obj){
+    var copy = {};
+    for(p in obj){
+      copy[p] = obj[p];
+    }
+    return copy;
+  };
+
+
+  /** 将key解析为由id和paramNames组成的对象
+   * @param {String} key, 形如Index.aspx?id=1&amp;Type=2
+   * @returns {Object}, 形如{id: &#x27;index.aspx&#x27;, paramNames: [&#x27;id&#x27;, &#x27;Type&#x27;]}
+   */
+  exports.parseMapKey2Entry = function (key){
+    var paramNames = [], id = &#x27;&#x27;
+      , keyLastIdx = key.length - 1
+      , match = /^(\/?\w+?[^$/{}]*(?:\/\w+?[^$/{}]*)*)(\/\$\{.*)?$/.exec(key.lastIndexOf(&#x27;/&#x27;) === keyLastIdx ? key.substring(0, keyLastIdx) : key);
+    if (match &amp;&amp; match.length === 3) {
+      id = match[1];
+      if (typeof (match[2]) != &#x27;undefined&#x27;){
+        var paramVars = match[2].split(&#x27;/&#x27;);
+        var paraVal, paramMatch;
+        for (var i = 0, len = paramVars.length; i &lt; len; i++) {
+          paramVal = paramVars[i];
+          paramMatch = /^\s*\$\{\s*(\S+)\s*\}\s*$/.exec(paramVal);
+          if (paramMatch &amp;&amp; paramMatch.length){
+            paramNames.push(paramMatch[1]);
+          }
+        }
+      }
+    }
+
+    return {
+      id: id,
+      paramNames: paramNames
+    };
+  };
+
+  /** 解析当前URL并获取匹配的路由回调函数集合
+   * @param {String} fragment
+   * @param {Object} routes, 路由信息对象，内含strRoutes和regExpRoutes两个路由信息集合
+   * @param {Boolean} isSingleMatch, 是否单匹配模式
+   * @returns {Array} 路由回调函数集合
+   */
+  exports.parseCurURL2Funcs = function(fragment, routes, isSingleMatch){
+    fragment = _utils.str.trim(fragment);
+    var strRoutes = _utils.array.grep(routes.strRoutes, function(el){
+      var idx = fragment.indexOf(el.id);
+      return idx === 0 &amp;&amp; (el.id.length === fragment.length || fragment.substr(el.id.length, 1) === &#x27;/&#x27;);
+    });
+    var regExpRoutes = _utils.array.grep(routes.regExpRoutes, function(el){
+      var idx = fragment.indexOf(el.id);
+      return idx === 0 &amp;&amp; (el.id.length === fragment.length || fragment.substr(el.id.length, 1) === &#x27;/&#x27;);
+    });
+    var tmpMatchRoutes = [];
+    for (var i = 0, len = strRoutes.length; i &lt; len; i++) {
+      strRoutes[i].type = 1;
+      tmpMatchRoutes.push(strRoutes[i]); 
+    };
+    for (var i = 0, len = regExpRoutes.length; i &lt; len; i++) {
+      regExpRoutes[i].type = 0;
+      tmpMatchRoutes.push(regExpRoutes[i]); 
+    };
+    tmpMatchRoutes.sort(function(a, b){
+      return b.id.length - a.id.length;
+    });
+
+    var curUrl = {
+      protocol: location.protocol.toLocaleLowerCase(),
+      host: location.host.toLocaleLowerCase(),
+      port: location.port.toLocaleLowerCase(),
+      pathname: location.pathname.toLocaleLowerCase()
+    };
+    var matchRoutes = [], tmpMatchRoute, props = [&#x27;protocol&#x27;, &#x27;host&#x27;, &#x27;port&#x27;, &#x27;pathname&#x27;], pass = false;
+    for (var i = 0, len = tmpMatchRoutes.length; i &lt; len &amp;&amp; (isSingleMatch &amp;&amp; !matchRoutes.length || !isSingleMatch); i++) {
+      tmpMatchRoute = tmpMatchRoutes[i];
+      if (tmpMatchRoute.type){
+        // 全字符串形式的路径信息
+        pass = _utils.array.all(props, function(el){
+          return tmpMatchRoute[el] === &#x27;&#x27; &amp;&amp; true || curUrl[el] === tmpMatchRoute[el];
+        });
+        if (pass){
+          delete tmpMatchRoute.type;
+          matchRoutes.push(tmpMatchRoute);
+        }
+      }
+      else{
+        // 含正则表达式形式的路径信息
+        pass = _utils.array.all(props, function(el){
+          if (_utils.isRegExp(tmpMatchRoute[el])){
+            return tmpMatchRoute[el].test(curUrl[el]);
+          }
+          else{
+            return tmpMatchRoute[el] === &#x27;&#x27; &amp;&amp; true || curUrl[el] === tmpMatchRoute[el];
+          }
+        });
+        if (pass){
+          delete tmpMatchRoute.type;
+          matchRoutes.push(tmpMatchRoute);
+        }
+      }
+    }
+
+    // 组装路径回调函数
+    var funcs = [];  
+    for (var i = 0, len = matchRoutes.length; i &lt; len; i++) {
+      var matchRoute = matchRoutes[i];
+      var params = {};
+      var index = fragment.indexOf(matchRoute.id);
+      var queryString = fragment.substring(index + matchRoute.id.length);
+      var vals = [];
+      if (queryString.length &gt; 1){
+        queryString = queryString.substring(1);
+        vals = queryString.split(&#x27;/&#x27;);
+        if (vals.length === 2 &amp;&amp; vals[1] === &#x27;&#x27;){
+          vals.length = 1;
+        }
+      }
+      for (var j = 0, jLen = matchRoute.paramNames.length; j &lt; jLen; j++) {
+        var paramName = matchRoute.paramNames[j];
+        var val = vals[j];
+        params[paramName] =  val &amp;&amp; decodeURI(val) || val;
+      };
+      funcs.push({ action: matchRoute.action, params: params });
+    }
+    
+    return funcs;
+  };
+
+  /** 将id和params序列化为fragment
+   * @param {String} id
+   * @param {Object} params
+   * @param {Object} 路由信息容器
+   * @returns {String}
+   */
+  exports.stringify2Fragment = function(id, params, routes){
+    var route;
+    for (var i = 0, len = routes.strRoutes.length; i &lt; len &amp;&amp; !route; i++) {
+      if (routes.strRoutes[i].id === id){
+        route = routes.strRoutes[i];
+      }
+    }
+    for (var i = 0, len = routes.regExpRoutes.length; i &lt; len &amp;&amp; !route; i++) {
+      if (routes.regExpRoutes[i].id === id){
+        route = routes.regExpRoutes[i];
+      }
+    }
+    if (!route){
+      return location.hash;
+    }
+    
+    var vals = [];
+    for (var i = 0, len = route.paramNames.length; i &lt; len; i++) {
+      var paramName = route.paramNames[i];
+      var val = null;
+      for(var prop in params){
+        if (prop === paramName)
+        {
+          val = params[prop];
+          break;
+        }
+      }
+      if (val === null) break;
+
+      vals.push(val);
+    };
+
+    var rs = id + (id.substring(id.length - 1) === &#x27;/&#x27; ? &#x27;&#x27; : &#x27;/&#x27;) + _utils.array.map(vals, function(el){ return  encodeURI(el);}).join(&#x27;/&#x27;);
+    return rs;
+  };
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

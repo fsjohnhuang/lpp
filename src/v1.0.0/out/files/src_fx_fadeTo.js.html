@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>src\fx\fadeTo.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Array.html">Array</a></li>
+            
+                <li><a href="../classes/Browser.html">Browser</a></li>
+            
+                <li><a href="../classes/Canvas.html">Canvas</a></li>
+            
+                <li><a href="../classes/Css.html">Css</a></li>
+            
+                <li><a href="../classes/EvtQueue.html">EvtQueue</a></li>
+            
+                <li><a href="../classes/Fn.html">Fn</a></li>
+            
+                <li><a href="../classes/fx.html">fx</a></li>
+            
+                <li><a href="../classes/IFrame.html">IFrame</a></li>
+            
+                <li><a href="../classes/lpp.html">lpp</a></li>
+            
+                <li><a href="../classes/Math.html">Math</a></li>
+            
+                <li><a href="../classes/Polyline.html">Polyline</a></li>
+            
+                <li><a href="../classes/Scene.html">Scene</a></li>
+            
+                <li><a href="../classes/shim.html">shim</a></li>
+            
+                <li><a href="../classes/Spirit.html">Spirit</a></li>
+            
+                <li><a href="../classes/Stage.html">Stage</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/base.html">base</a></li>
+            
+                <li><a href="../modules/fx.html">fx</a></li>
+            
+                <li><a href="../modules/lpp.html">lpp</a></li>
+            
+                <li><a href="../modules/movie.html">movie</a></li>
+            
+                <li><a href="../modules/Polyline.html">Polyline</a></li>
+            
+                <li><a href="../modules/router.html">router</a></li>
+            
+                <li><a href="../modules/vml.html">vml</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: src\fx\fadeTo.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * 动画模块
+ * @module lpp
+ * @submodule fx
+ */
+define(function(require, exports, module){
+  &quot;use strict&quot;;
+
+  require(&#x27;../shim&#x27;);
+  var _utils = {};
+  _utils.browser = require(&#x27;../Browser&#x27;);
+  _utils.fn = require(&#x27;../Fn&#x27;);
+
+  /** 
+   * @class fx
+   * @static
+   */
+  
+  /**
+   * 获取DOM对象的透明属性值
+   *
+   * @method _getCurOpacity
+   * @private
+   * @param {HtmlElement} dom
+   * @return {Number} 等于小于1的值
+   */
+  var _getCurOpacity = {
+    &#x27;IE&#x27;: function(dom){
+      var filter = dom.currentStyle.filter;
+      if (filter === &#x27;&#x27;) return 1;
+      
+      var rs = /alpha\(opacity=(\d+(\.\d+)?)\)/.exec(filter);
+      if (!rs || rs.length !== 3 || typeof rs[1] === &#x27;undefined&#x27;) return 1;
+
+      return Number(rs[1]) / 100;
+    },
+    &#x27;nonIE&#x27;: function(dom){
+      return Number(window.getComputedStyle(dom, null).opacity);
+    }
+  };
+
+  /**
+   * 设置DOM对象的透明属性值
+   *
+   * @method _setCurOpacity
+   * @private
+   * @param {HtmlElement} dom
+   * @param {Number} opacity 透明度等于小于1
+   */
+  var _setCurOpacity = {
+    &#x27;IE&#x27;: function(dom, opacity){
+      var filter = dom.currentStyle.filter;
+      var newFilter
+        , regExp = /alpha\(opacity=\d+(\.\d+)?\)/i 
+        , newOpacity = &#x27;alpha(opacity=&#x27; + (opacity * 100) + &#x27;)&#x27;;
+      if (filter === &#x27;&#x27;){
+        newFilter = newOpacity;
+      }
+      else{
+        var rs = regExp.test(filter); 
+        if (rs){
+          newFilter = filter.replace(regExp, newOpacity);
+        }
+        else{
+          newFilter += &#x27;;&#x27; + newOpacity;
+        }
+      }
+      dom.style.filter = newFilter;
+    },
+    &#x27;nonIE&#x27;: function(dom, opacity){
+      dom.style.opacity = opacity;
+    }
+  };
+
+  /**
+   * 设置透明度
+   *
+   * @method fadeTo
+   * @param {HtmlElement} dom DOM对象
+   * @param {Number} opacity 透明度，等于小于1
+   * @param {Number} [during=1] 动画时间
+   * @param {Function} [callback] 动画结束的回调函数
+   */
+  exports.fadeTo = function(dom, opacity, during, callback){
+    // 获取元素当前状态
+    var curDisplay = window.getComputedStyle(dom, null).display;
+    if (curDisplay === &#x27;none&#x27;){
+      callback &amp;&amp; callback();
+      return;
+    }
+
+    var isLtIE10 = _utils.browser.isLtIE(10);
+    var getCurOpacity = _getCurOpacity[isLtIE10 ? &#x27;IE&#x27; : &#x27;nonIE&#x27;];
+    var setCurOpacity = _setCurOpacity[isLtIE10 ? &#x27;IE&#x27; : &#x27;nonIE&#x27;];
+
+    var curOpacity = getCurOpacity(dom);
+    var step = (opacity - curOpacity) / during;
+    for (var i = 0, len = during; i &lt;= len; i++) {
+      _utils.fn.delay(function(dom, delay, during, callback){
+        setCurOpacity(dom, curOpacity + step * delay);
+
+        delay === during &amp;&amp; callback &amp;&amp; callback();
+      }, i, dom, i, during, callback);
+    }
+  };
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

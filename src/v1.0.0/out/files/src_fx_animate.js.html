@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>src\fx\animate.js</title>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min.css">
+    <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon.png">
+    <script src="http://yui.yahooapis.com/combo?3.9.1/build/yui/yui-min.js"></script>
+</head>
+<body class="yui3-skin-sam">
+
+<div id="doc">
+    <div id="hd" class="yui3-g header">
+        <div class="yui3-u-3-4">
+            
+                <h1><img src="../assets/css/logo.png" title=""></h1>
+            
+        </div>
+        <div class="yui3-u-1-4 version">
+            <em>API Docs for: </em>
+        </div>
+    </div>
+    <div id="bd" class="yui3-g">
+
+        <div class="yui3-u-1-4">
+            <div id="docs-sidebar" class="sidebar apidocs">
+                <div id="api-list">
+    <h2 class="off-left">APIs</h2>
+    <div id="api-tabview" class="tabview">
+        <ul class="tabs">
+            <li><a href="#api-classes">Classes</a></li>
+            <li><a href="#api-modules">Modules</a></li>
+        </ul>
+
+        <div id="api-tabview-filter">
+            <input type="search" id="api-filter" placeholder="Type to filter APIs">
+        </div>
+
+        <div id="api-tabview-panel">
+            <ul id="api-classes" class="apis classes">
+            
+                <li><a href="../classes/Array.html">Array</a></li>
+            
+                <li><a href="../classes/Browser.html">Browser</a></li>
+            
+                <li><a href="../classes/Canvas.html">Canvas</a></li>
+            
+                <li><a href="../classes/Css.html">Css</a></li>
+            
+                <li><a href="../classes/EvtQueue.html">EvtQueue</a></li>
+            
+                <li><a href="../classes/Fn.html">Fn</a></li>
+            
+                <li><a href="../classes/fx.html">fx</a></li>
+            
+                <li><a href="../classes/IFrame.html">IFrame</a></li>
+            
+                <li><a href="../classes/lpp.html">lpp</a></li>
+            
+                <li><a href="../classes/Math.html">Math</a></li>
+            
+                <li><a href="../classes/Polyline.html">Polyline</a></li>
+            
+                <li><a href="../classes/Scene.html">Scene</a></li>
+            
+                <li><a href="../classes/shim.html">shim</a></li>
+            
+                <li><a href="../classes/Spirit.html">Spirit</a></li>
+            
+                <li><a href="../classes/Stage.html">Stage</a></li>
+            
+            </ul>
+
+            <ul id="api-modules" class="apis modules">
+            
+                <li><a href="../modules/base.html">base</a></li>
+            
+                <li><a href="../modules/fx.html">fx</a></li>
+            
+                <li><a href="../modules/lpp.html">lpp</a></li>
+            
+                <li><a href="../modules/movie.html">movie</a></li>
+            
+                <li><a href="../modules/Polyline.html">Polyline</a></li>
+            
+                <li><a href="../modules/router.html">router</a></li>
+            
+                <li><a href="../modules/vml.html">vml</a></li>
+            
+            </ul>
+        </div>
+    </div>
+</div>
+
+            </div>
+        </div>
+        <div class="yui3-u-3-4">
+                <div id="api-options">
+        Show:
+        <label for="api-show-inherited">
+            <input type="checkbox" id="api-show-inherited" checked>
+            Inherited
+        </label>
+
+        <label for="api-show-protected">
+            <input type="checkbox" id="api-show-protected">
+            Protected
+        </label>
+
+        <label for="api-show-private">
+            <input type="checkbox" id="api-show-private">
+            Private
+        </label>
+        <label for="api-show-deprecated">
+            <input type="checkbox" id="api-show-deprecated">
+            Deprecated
+        </label>
+
+    </div>
+
+
+            <div class="apidocs">
+                <div id="docs-main">
+                    <div class="content">
+                        <h1 class="file-heading">File: src\fx\animate.js</h1>
+
+<div class="file">
+    <pre class="code prettyprint linenums">
+/**
+ * 动画模块
+ * @module lpp
+ * @submodule fx
+ */
+define(function(require, exports, module){
+  require(&#x27;../shim&#x27;);
+  var _utils = {};
+  _utils.array = require(&#x27;../Array&#x27;);
+  _utils.str = require(&#x27;../Str&#x27;);
+  _utils.fn = require(&#x27;../Fn&#x27;);
+  _utils.css = require(&#x27;../Css&#x27;);
+
+  /** 
+   * @class fx
+   * @static
+   */
+
+  /**
+   * @attribute _setCss 设置元素样式的方法集合
+   * @private
+   */
+  var _setCss = {
+    /**
+     * 计算数值类型的下一个样式值
+     *
+     * @method calcNextNumVal
+     * @private
+     * @param {Object} fxCss 整理后的动画样式配置项
+     * @param {String} prop fxCss的属性键名
+     * @return {Number} 下一个样式值
+     */
+    calcNextNumVal: function(fxCss, prop){
+            fxCss[prop].curVal += fxCss[prop].step;
+            return fxCss[prop].curVal;
+          },
+    /**
+     * 计算颜色类型的下一个样式值
+     *
+     * @method calcNextColorVal
+     * @private
+     * @param {Object} fxCss 整理后的动画样式配置项
+     * @param {String} prop fxCss的属性键名
+     * @return {Number} 下一个样式值
+     */
+    calcNextColorVal: function(fxCss, prop){
+                        fxCss[prop].curVal.red = fxCss[prop].curVal.red + fxCss[prop].rStep;
+                        fxCss[prop].curVal.green = fxCss[prop].curVal.green + fxCss[prop].gStep;
+                        fxCss[prop].curVal.blue = fxCss[prop].curVal.blue + fxCss[prop].bStep;
+
+                        var _red = _utils.css.getValidColor(fxCss[prop].curVal.red)
+                            , _green = _utils.css.getValidColor(fxCss[prop].curVal.green)
+                            , _blue = _utils.css.getValidColor(fxCss[prop].curVal.blue);
+                        return _utils.css.toColorHexStr(_red, _green, _blue);
+                      }
+  };
+  /**
+   * 设置如width、height、top、left等样式属性值
+   *
+   * @method offsetCss 
+   * @private
+   * @param {HtmlElement} dom
+   * @param {Object} fxCss 整理后的动画样式配置项
+   * @param {String} prop fxCss的属性键名
+   */
+  _setCss.offsetCss = function(dom, fxCss, prop){
+    dom.style[prop] = this.calcNextNumVal(fxCss, prop) + &#x27;px&#x27;;
+  }.bind(_setCss);
+  /**
+   * 设置如strokeWeight等样式属性值
+   *
+   * @method vmlNumCss 
+   * @private
+   * @type Function
+   * @param {HtmlElement} dom
+   * @param {Object} fxCss 整理后的动画样式配置项
+   * @param {String} prop fxCss的属性键名
+   */
+  _setCss.vmlNumCss = function(dom, fxCss, prop){
+    dom[prop] = this.calcNextNumVal(fxCss, prop) + &#x27;px&#x27;;
+  }.bind(_setCss);
+  /**
+   * 设置如strokeColor等样式属性值
+   *
+   * @method vmlColorCss 
+   * @private
+   * @type Function
+   * @param {HtmlElement} dom
+   * @param {Object} fxCss 整理后的动画样式配置项
+   * @param {String} prop fxCss的属性键名
+   */
+  _setCss.vmlColorCss = function(dom, fxCss, prop){
+    dom[prop] = this.calcNextColorVal(fxCss, prop);
+    dom[&#x27;data-&#x27; + prop] = dom[prop];
+  }.bind(_setCss);
+  /**
+   * 设置如borderColor, backgroundColor, color等样式属性值
+   *
+   * @method colorCss 
+   * @private
+   * @param {HtmlElement} dom
+   * @param {Object} fxCss 整理后的动画样式配置项
+   * @param {String} prop fxCss的属性键名
+   */
+  _setCss.colorCss = function(dom, fxCss, prop){
+    dom.style[prop] = this.calcNextColorVal(fxCss, prop);
+  }.bind(_setCss);
+  /**
+   * 设置如backgroundImage等样式属性值
+   *
+   * @method defaultCss 
+   * @private
+   * @param {HtmlElement} dom
+   * @param {Object} fxCss 整理后的动画样式配置项
+   * @param {String} prop fxCss的属性键名
+   */
+  _setCss.defaultCss = function(dom, fxCss, prop){
+    dom.style[prop] = fxCss[prop].targetVal;
+  }.bind(_setCss);
+
+  /**
+   * 仿jQuery的animate动画函数
+   *
+   * @method animate
+   * @param {HtmlElement} dom DOM对象
+   * @param {Object} css css属性集合
+   * @param {Number} during 动画时间
+   * @param {FxQ} fxQ 动画队列管理器
+   * @param {Function} callback 动画结束时的回调函数
+   */
+  exports.animate = function (dom, css, during, callback) {
+      during = during || 1;
+
+      // 整理动画属性
+      var fxCss = {};
+      var offsetCss = [];
+      var vmlNumCss = [];
+      var vmlColorCss = [];
+      var colorCss = [];
+      var otherCss = [];
+      for (var prop in css){
+        if ([&#x27;width&#x27;, &#x27;height&#x27;, &#x27;top&#x27;, &#x27;left&#x27;].indexOf(prop) &gt;=0){
+          offsetCss.push(prop);
+        }
+        else if ([&#x27;strokeWeight&#x27;].indexOf(prop) &gt;= 0){
+          vmlNumCss.push(prop);
+        }
+        else if ([&#x27;strokeColor&#x27;].indexOf(prop) &gt;= 0){
+          vmlColorCss.push(prop);
+        }
+        else if ([&#x27;backgroundColor&#x27;, &#x27;color&#x27;, &#x27;borderColor&#x27;].indexOf(prop) &gt;=0){
+          colorCss.push(prop);
+        }
+        else{
+          otherCss.push(prop);
+        }
+      }
+
+      // 整理width, hegiht, top, left动画属性
+      var i = 0, len = offsetCss.length;
+      if (len){
+        var origDisplay = window.getComputedStyle(dom).display;
+        if (origDisplay === &#x27;none&#x27;){
+          dom.style.display = &#x27;block&#x27;;
+        }
+        for (; i &lt; len; i++) {
+          var prop = offsetCss[i]; 
+          fxCss[prop] = {
+            curVal: dom[&#x27;offset&#x27; + _utils.str.toUpperCase(prop, 0)],
+            targetVal: css[prop]
+          };
+          fxCss[prop].step = (css[prop] - fxCss[prop].curVal) / during;
+        }
+        dom.style.display = origDisplay;
+      }
+
+      // 整理vml的strokeWeight动画属性
+      var i = 0, len = vmlNumCss.length;
+      if (len){
+        for (; i &lt; len; i++) {
+          var prop = vmlNumCss[i]; 
+          fxCss[prop] = {
+            curVal: Number(String(dom[&#x27;data-&#x27; + prop]).replace(/px/ig, &#x27;&#x27;)),
+            targetVal: css[prop]
+          };
+          fxCss[prop].step = (css[prop] - fxCss[prop].curVal) / during;
+        }
+      }
+
+      // 整理vml的strokeColor动画属性
+      i = 0, len = vmlColorCss.length;
+      for (; i &lt; len; i++) {
+        var prop = vmlColorCss[i];
+        fxCss[prop] = {
+          curVal: _utils.css.toRGB(dom[prop].value),
+          targetVal: _utils.css.toRGB(css[prop])
+        };
+        fxCss[prop].rStep = (fxCss[prop].targetVal.red - fxCss[prop].curVal.red) / during;
+        fxCss[prop].gStep = (fxCss[prop].targetVal.green - fxCss[prop].curVal.green) / during;
+        fxCss[prop].bStep = (fxCss[prop].targetVal.blue - fxCss[prop].curVal.blue) / during;
+      } 
+
+      // 整理color, borderColor, backgroundColor动画属性
+      i = 0, len = colorCss.length;
+      for (; i &lt; len; i++) {
+        var prop = colorCss[i];
+        fxCss[prop] = {
+          curVal: _utils.css.toRGB(window.getComputedStyle(dom)[prop]),
+          targetVal: _utils.css.toRGB(css[prop])
+        };
+        fxCss[prop].rStep = (fxCss[prop].targetVal.red - fxCss[prop].curVal.red) / during;
+        fxCss[prop].gStep = (fxCss[prop].targetVal.green - fxCss[prop].curVal.green) / during;
+        fxCss[prop].bStep = (fxCss[prop].targetVal.blue - fxCss[prop].curVal.blue) / during;
+      } 
+
+      // 整理其他动画属性
+      i = 0, len = otherCss.length;
+      for (; i &lt; len; i++) {
+        var prop = otherCss[i];
+        fxCss[prop].targetVal = css[prop];
+      }
+
+      // 运行动画
+      for (var i = 1; i &lt;= during; i++) {
+           _utils.fn.delay(function (delay, during, dom, fxCss, callback) {
+              for (var prop in fxCss) {
+                 var setCss;
+                 if ([&#x27;width&#x27;, &#x27;height&#x27;, &#x27;top&#x27;, &#x27;left&#x27;].indexOf(prop) &gt;= 0){
+                   setCss = _setCss.offsetCss;
+                 }
+                 else if ([&#x27;strokeWeight&#x27;].indexOf(prop) &gt;= 0){
+                   setCss = _setCss.vmlNumCss;
+                 }  
+                 else if ([&#x27;strokeColor&#x27;].indexOf(prop) &gt;= 0) {
+                   setCss = _setCss.vmlColorCss;
+                 }
+                 else if ([&#x27;backgroundColor&#x27;, &#x27;color&#x27;, &#x27;borderColor&#x27;].indexOf(prop) &gt;= 0) {
+                   setCss = _setCss.colorCss;
+                 }
+                 else {
+                   setCss = _setCss.defaultCss;
+                 }
+                 setCss(dom, fxCss, prop);
+              }
+
+              delay == during &amp;&amp; callback &amp;&amp; callback(self);
+          }, i, i, during, dom, fxCss, callback);
+      }
+  };
+});
+
+    </pre>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../assets/vendor/prettify/prettify-min.js"></script>
+<script>prettyPrint();</script>
+<script src="../assets/js/yui-prettify.js"></script>
+<script src="../assets/../api.js"></script>
+<script src="../assets/js/api-filter.js"></script>
+<script src="../assets/js/api-list.js"></script>
+<script src="../assets/js/api-search.js"></script>
+<script src="../assets/js/apidocs.js"></script>
+</body>
+</html>

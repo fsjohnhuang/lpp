@@ -1,0 +1,3585 @@
+{
+    "project": {},
+    "files": {
+        "sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js": {
+            "name": "sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "sea-modules\\seajs\\seajs-log\\1.0.1\\seajs-log-debug.js": {
+            "name": "sea-modules\\seajs\\seajs-log\\1.0.1\\seajs-log-debug.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\fx\\animate.js": {
+            "name": "src\\fx\\animate.js",
+            "modules": {
+                "fx": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\fx\\fadeIn.js": {
+            "name": "src\\fx\\fadeIn.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\fx\\fadeOut.js": {
+            "name": "src\\fx\\fadeOut.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\fx\\fadeTo.js": {
+            "name": "src\\fx\\fadeTo.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\fx\\points.js": {
+            "name": "src\\fx\\points.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\fx\\zoomToggle.js": {
+            "name": "src\\fx\\zoomToggle.js",
+            "modules": {},
+            "classes": {
+                "fx": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\movie\\Cmp.js": {
+            "name": "src\\movie\\Cmp.js",
+            "modules": {
+                "movie": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\movie\\Director.js": {
+            "name": "src\\movie\\Director.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\movie\\Scene.js": {
+            "name": "src\\movie\\Scene.js",
+            "modules": {},
+            "classes": {
+                "Scene": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\movie\\Spirit.js": {
+            "name": "src\\movie\\Spirit.js",
+            "modules": {},
+            "classes": {
+                "Spirit": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\movie\\Stage.js": {
+            "name": "src\\movie\\Stage.js",
+            "modules": {},
+            "classes": {
+                "Stage": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\router\\private\\AssembleRoute.js": {
+            "name": "src\\router\\private\\AssembleRoute.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\router\\AspxStyle.js": {
+            "name": "src\\router\\AspxStyle.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\router\\RESTfulStyle.js": {
+            "name": "src\\router\\RESTfulStyle.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\router\\Router.js": {
+            "name": "src\\router\\Router.js",
+            "modules": {
+                "lpp": 1,
+                "router": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\vml\\cmp\\Polyline.js": {
+            "name": "src\\vml\\cmp\\Polyline.js",
+            "modules": {
+                "Polyline": 1
+            },
+            "classes": {
+                "Polyline": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\vml\\Canvas.js": {
+            "name": "src\\vml\\Canvas.js",
+            "modules": {
+                "vml": 1
+            },
+            "classes": {
+                "Canvas": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\vml\\IFrame.js": {
+            "name": "src\\vml\\IFrame.js",
+            "modules": {},
+            "classes": {
+                "IFrame": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\Array.js": {
+            "name": "src\\Array.js",
+            "modules": {
+                "base": 1
+            },
+            "classes": {
+                "Array": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\Browser.js": {
+            "name": "src\\Browser.js",
+            "modules": {},
+            "classes": {
+                "Browser": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\Css.js": {
+            "name": "src\\Css.js",
+            "modules": {},
+            "classes": {
+                "Css": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\EvtQueue.js": {
+            "name": "src\\EvtQueue.js",
+            "modules": {},
+            "classes": {
+                "EvtQueue": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\Fn.js": {
+            "name": "src\\Fn.js",
+            "modules": {},
+            "classes": {
+                "Fn": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\Lpp.js": {
+            "name": "src\\Lpp.js",
+            "modules": {},
+            "classes": {
+                "lpp": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\Math.js": {
+            "name": "src\\Math.js",
+            "modules": {},
+            "classes": {
+                "Math": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "src\\shim.js": {
+            "name": "src\\shim.js",
+            "modules": {},
+            "classes": {
+                "shim": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "lpp": {
+            "name": "lpp",
+            "submodules": {
+                "fx": 1,
+                "movie": 1,
+                "vml": 1,
+                "base": 1
+            },
+            "classes": {
+                "fx": 1,
+                "Scene": 1,
+                "Spirit": 1,
+                "Stage": 1,
+                "Canvas": 1,
+                "IFrame": 1,
+                "Array": 1,
+                "Browser": 1,
+                "Css": 1,
+                "EvtQueue": 1,
+                "Fn": 1,
+                "lpp": 1,
+                "Math": 1,
+                "shim": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\shim.js",
+            "line": 7,
+            "author": "fsjohnhuang"
+        },
+        "fx": {
+            "name": "fx",
+            "submodules": {},
+            "classes": {
+                "fx": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "lpp",
+            "namespace": "",
+            "file": "src\\fx\\zoomToggle.js",
+            "line": 13,
+            "description": "动画模块"
+        },
+        "movie": {
+            "name": "movie",
+            "submodules": {},
+            "classes": {
+                "Scene": 1,
+                "Spirit": 1,
+                "Stage": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "lpp",
+            "namespace": "",
+            "file": "src\\movie\\Stage.js",
+            "line": 40,
+            "description": "电影模块"
+        },
+        "router": {
+            "name": "router",
+            "submodules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\router\\Router.js",
+            "line": 1
+        },
+        "Polyline": {
+            "name": "Polyline",
+            "submodules": {},
+            "classes": {
+                "Polyline": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "src\\vml\\cmp\\Polyline.js",
+            "line": 21,
+            "description": "多边形"
+        },
+        "vml": {
+            "name": "vml",
+            "submodules": {},
+            "classes": {
+                "Canvas": 1,
+                "IFrame": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "lpp",
+            "namespace": "",
+            "file": "src\\vml\\IFrame.js",
+            "line": 45,
+            "description": "VML画布"
+        },
+        "base": {
+            "name": "base",
+            "submodules": {},
+            "classes": {
+                "Array": 1,
+                "Browser": 1,
+                "Css": 1,
+                "EvtQueue": 1,
+                "Fn": 1,
+                "lpp": 1,
+                "Math": 1,
+                "shim": 1
+            },
+            "fors": {},
+            "is_submodule": 1,
+            "namespaces": {},
+            "module": "lpp",
+            "namespace": "",
+            "file": "src\\shim.js",
+            "line": 7,
+            "description": "事件队列,用于序列化执行事件",
+            "since": "1.0.0"
+        }
+    },
+    "classes": {
+        "fx": {
+            "name": "fx",
+            "shortname": "fx",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "lpp",
+            "submodule": "fx",
+            "namespace": "",
+            "file": "src\\fx\\zoomToggle.js",
+            "line": 13,
+            "static": 1
+        },
+        "Scene": {
+            "name": "Scene",
+            "shortname": "Scene",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "lpp",
+            "submodule": "movie",
+            "namespace": "",
+            "file": "src\\movie\\Scene.js",
+            "line": 19,
+            "description": "场景类",
+            "params": [
+                {
+                    "name": "conf",
+                    "description": "属性含bg",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Spirit": {
+            "name": "Spirit",
+            "shortname": "Spirit",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "lpp",
+            "submodule": "movie",
+            "namespace": "",
+            "file": "src\\movie\\Spirit.js",
+            "line": 24,
+            "description": "精灵类",
+            "is_constructor": 1
+        },
+        "Stage": {
+            "name": "Stage",
+            "shortname": "Stage",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "lpp",
+            "submodule": "movie",
+            "namespace": "",
+            "file": "src\\movie\\Stage.js",
+            "line": 40,
+            "description": "舞台类",
+            "static": 1
+        },
+        "Polyline": {
+            "name": "Polyline",
+            "shortname": "Polyline",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "Polyline",
+            "namespace": "",
+            "file": "src\\vml\\cmp\\Polyline.js",
+            "line": 21,
+            "description": "多边形",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "conf",
+                    "description": "配置项<br/>\n配置项内容<br/>\n id {String} 'id'<br/>\n name {String} 'name'<br/>\n filled {Boolean} 是否填充<br/>\n fillColor {String} 填充颜色<br/>\n strokeWeight {String|Number} 边宽<br/>\n strokeColor {String} 边颜色<br/>\n style {String} css样式<br/>\n point {String} 边路径，形如 0,0 0,100 100,100 100,200<br/>",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Canvas": {
+            "name": "Canvas",
+            "shortname": "Canvas",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "lpp",
+            "submodule": "vml",
+            "namespace": "",
+            "file": "src\\vml\\Canvas.js",
+            "line": 17,
+            "description": "VML画布",
+            "since": "1.0.0",
+            "beta": 1,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "conf",
+                    "description": "配置项",
+                    "type": "Object"
+                }
+            ]
+        },
+        "IFrame": {
+            "name": "IFrame",
+            "shortname": "IFrame",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "lpp",
+            "submodule": "vml",
+            "namespace": "",
+            "file": "src\\vml\\IFrame.js",
+            "line": 45,
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "conf",
+                    "description": "配置信息",
+                    "type": "Object"
+                }
+            ]
+        },
+        "Array": {
+            "name": "Array",
+            "shortname": "Array",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "lpp",
+            "submodule": "base",
+            "namespace": "",
+            "file": "src\\Array.js",
+            "line": 9,
+            "description": "数组辅助类",
+            "static": 1,
+            "since": "1.0.0"
+        },
+        "Browser": {
+            "name": "Browser",
+            "shortname": "Browser",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "lpp",
+            "submodule": "base",
+            "namespace": "",
+            "file": "src\\Browser.js",
+            "line": 9,
+            "description": "浏览器辅助类",
+            "static": 1,
+            "since": "1.0.0"
+        },
+        "Css": {
+            "name": "Css",
+            "shortname": "Css",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "lpp",
+            "submodule": "base",
+            "namespace": "",
+            "file": "src\\Css.js",
+            "line": 48,
+            "static": 1,
+            "since": "1.0.0"
+        },
+        "EvtQueue": {
+            "name": "EvtQueue",
+            "shortname": "EvtQueue",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "lpp",
+            "submodule": "base",
+            "namespace": "",
+            "file": "src\\EvtQueue.js",
+            "line": 155,
+            "description": "创建事件队列对象",
+            "static": 1,
+            "itemtype": "method",
+            "return": {
+                "description": "事件队列对象<br/>\n事件队列对象含<br/>\n方法：\nregisterWith<br/>\nregister<br/>\ncall",
+                "type": "EvtQueue"
+            }
+        },
+        "Fn": {
+            "name": "Fn",
+            "shortname": "Fn",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "lpp",
+            "submodule": "base",
+            "namespace": "",
+            "file": "src\\Fn.js",
+            "line": 9,
+            "static": 1,
+            "since": "1.0.0"
+        },
+        "lpp": {
+            "name": "lpp",
+            "shortname": "lpp",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "lpp",
+            "submodule": "base",
+            "namespace": "",
+            "file": "src\\Lpp.js",
+            "line": 6,
+            "description": "基础辅助类"
+        },
+        "Math": {
+            "name": "Math",
+            "shortname": "Math",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "lpp",
+            "submodule": "base",
+            "namespace": "",
+            "file": "src\\Math.js",
+            "line": 17,
+            "description": "数学计算辅助类",
+            "static": 1
+        },
+        "shim": {
+            "name": "shim",
+            "shortname": "shim",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "lpp",
+            "submodule": "base",
+            "namespace": "",
+            "file": "src\\shim.js",
+            "line": 7,
+            "description": "模拟ES5的方法",
+            "static": 1,
+            "since": "1.0.0"
+        }
+    },
+    "classitems": [
+        {
+            "file": "sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js",
+            "line": 1,
+            "description": "Sea.js 2.1.1 | seajs.org/LICENSE.md",
+            "class": "fx"
+        },
+        {
+            "file": "sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js",
+            "line": 18,
+            "description": "util-lang.js - The minimal language enhancement",
+            "class": "fx"
+        },
+        {
+            "file": "sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js",
+            "line": 39,
+            "description": "util-events.js - The minimal events support",
+            "class": "fx"
+        },
+        {
+            "file": "sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js",
+            "line": 98,
+            "description": "util-path.js - The utilities for operating path such as id, uri",
+            "class": "fx"
+        },
+        {
+            "file": "sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js",
+            "line": 262,
+            "description": "util-request.js - The utilities for requesting script and style files\nref: tests/research/load-js-css/test.html",
+            "class": "fx"
+        },
+        {
+            "file": "sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js",
+            "line": 413,
+            "description": "util-deps.js - The parser for dependencies\nref: tests/research/parse-dependencies/test.html",
+            "class": "fx"
+        },
+        {
+            "file": "sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js",
+            "line": 435,
+            "description": "module.js - The core of module loader",
+            "class": "fx"
+        },
+        {
+            "file": "sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js",
+            "line": 840,
+            "description": "config.js - The configuration for the loader",
+            "class": "fx"
+        },
+        {
+            "file": "sea-modules\\seajs\\seajs-log\\1.0.1\\seajs-log-debug.js",
+            "line": 2,
+            "description": "The Sea.js plugin to provide log function",
+            "class": "fx"
+        },
+        {
+            "file": "src\\fx\\animate.js",
+            "line": 19,
+            "itemtype": "attribute",
+            "name": "_setCss 设置元素样式的方法集合",
+            "access": "private",
+            "tagname": "",
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\animate.js",
+            "line": 24,
+            "description": "计算数值类型的下一个样式值",
+            "itemtype": "method",
+            "name": "calcNextNumVal",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "fxCss",
+                    "description": "整理后的动画样式配置项",
+                    "type": "Object"
+                },
+                {
+                    "name": "prop",
+                    "description": "fxCss的属性键名",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "下一个样式值",
+                "type": "Number"
+            },
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\animate.js",
+            "line": 37,
+            "description": "计算颜色类型的下一个样式值",
+            "itemtype": "method",
+            "name": "calcNextColorVal",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "fxCss",
+                    "description": "整理后的动画样式配置项",
+                    "type": "Object"
+                },
+                {
+                    "name": "prop",
+                    "description": "fxCss的属性键名",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "下一个样式值",
+                "type": "Number"
+            },
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\animate.js",
+            "line": 57,
+            "description": "设置如width、height、top、left等样式属性值",
+            "itemtype": "method",
+            "name": "offsetCss",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "dom",
+                    "description": "",
+                    "type": "HtmlElement"
+                },
+                {
+                    "name": "fxCss",
+                    "description": "整理后的动画样式配置项",
+                    "type": "Object"
+                },
+                {
+                    "name": "prop",
+                    "description": "fxCss的属性键名",
+                    "type": "String"
+                }
+            ],
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\animate.js",
+            "line": 69,
+            "description": "设置如strokeWeight等样式属性值",
+            "itemtype": "method",
+            "name": "vmlNumCss",
+            "access": "private",
+            "tagname": "",
+            "type": "Function",
+            "params": [
+                {
+                    "name": "dom",
+                    "description": "",
+                    "type": "HtmlElement"
+                },
+                {
+                    "name": "fxCss",
+                    "description": "整理后的动画样式配置项",
+                    "type": "Object"
+                },
+                {
+                    "name": "prop",
+                    "description": "fxCss的属性键名",
+                    "type": "String"
+                }
+            ],
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\animate.js",
+            "line": 82,
+            "description": "设置如strokeColor等样式属性值",
+            "itemtype": "method",
+            "name": "vmlColorCss",
+            "access": "private",
+            "tagname": "",
+            "type": "Function",
+            "params": [
+                {
+                    "name": "dom",
+                    "description": "",
+                    "type": "HtmlElement"
+                },
+                {
+                    "name": "fxCss",
+                    "description": "整理后的动画样式配置项",
+                    "type": "Object"
+                },
+                {
+                    "name": "prop",
+                    "description": "fxCss的属性键名",
+                    "type": "String"
+                }
+            ],
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\animate.js",
+            "line": 96,
+            "description": "设置如borderColor, backgroundColor, color等样式属性值",
+            "itemtype": "method",
+            "name": "colorCss",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "dom",
+                    "description": "",
+                    "type": "HtmlElement"
+                },
+                {
+                    "name": "fxCss",
+                    "description": "整理后的动画样式配置项",
+                    "type": "Object"
+                },
+                {
+                    "name": "prop",
+                    "description": "fxCss的属性键名",
+                    "type": "String"
+                }
+            ],
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\animate.js",
+            "line": 108,
+            "description": "设置如backgroundImage等样式属性值",
+            "itemtype": "method",
+            "name": "defaultCss",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "dom",
+                    "description": "",
+                    "type": "HtmlElement"
+                },
+                {
+                    "name": "fxCss",
+                    "description": "整理后的动画样式配置项",
+                    "type": "Object"
+                },
+                {
+                    "name": "prop",
+                    "description": "fxCss的属性键名",
+                    "type": "String"
+                }
+            ],
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\animate.js",
+            "line": 121,
+            "description": "仿jQuery的animate动画函数",
+            "itemtype": "method",
+            "name": "animate",
+            "params": [
+                {
+                    "name": "dom",
+                    "description": "DOM对象",
+                    "type": "HtmlElement"
+                },
+                {
+                    "name": "css",
+                    "description": "css属性集合",
+                    "type": "Object"
+                },
+                {
+                    "name": "during",
+                    "description": "动画时间",
+                    "type": "Number"
+                },
+                {
+                    "name": "fxQ",
+                    "description": "动画队列管理器",
+                    "type": "FxQ"
+                },
+                {
+                    "name": "callback",
+                    "description": "动画结束时的回调函数",
+                    "type": "Function"
+                }
+            ],
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\fadeIn.js",
+            "line": 16,
+            "description": "显示",
+            "itemtype": "method",
+            "name": "fadeIn",
+            "params": [
+                {
+                    "name": "dom",
+                    "description": "DOM对象",
+                    "type": "HtmlElement"
+                },
+                {
+                    "name": "during",
+                    "description": "动画时间",
+                    "type": "Number",
+                    "optional": true,
+                    "optdefault": "1"
+                },
+                {
+                    "name": "callback",
+                    "description": "动画结束的回调函数",
+                    "type": "Function",
+                    "optional": true
+                }
+            ],
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\fadeOut.js",
+            "line": 16,
+            "description": "隐藏",
+            "itemtype": "method",
+            "name": "fadeTo",
+            "params": [
+                {
+                    "name": "dom",
+                    "description": "DOM对象",
+                    "type": "HtmlElement"
+                },
+                {
+                    "name": "during",
+                    "description": "动画时间",
+                    "type": "Number",
+                    "optional": true,
+                    "optdefault": "1"
+                },
+                {
+                    "name": "callback",
+                    "description": "动画结束的回调函数",
+                    "type": "Function",
+                    "optional": true
+                }
+            ],
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\fadeTo.js",
+            "line": 19,
+            "description": "获取DOM对象的透明属性值",
+            "itemtype": "method",
+            "name": "_getCurOpacity",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "dom",
+                    "description": "",
+                    "type": "HtmlElement"
+                }
+            ],
+            "return": {
+                "description": "等于小于1的值",
+                "type": "Number"
+            },
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\fadeTo.js",
+            "line": 42,
+            "description": "设置DOM对象的透明属性值",
+            "itemtype": "method",
+            "name": "_setCurOpacity",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "dom",
+                    "description": "",
+                    "type": "HtmlElement"
+                },
+                {
+                    "name": "opacity",
+                    "description": "透明度等于小于1",
+                    "type": "Number"
+                }
+            ],
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\fadeTo.js",
+            "line": 75,
+            "description": "设置透明度",
+            "itemtype": "method",
+            "name": "fadeTo",
+            "params": [
+                {
+                    "name": "dom",
+                    "description": "DOM对象",
+                    "type": "HtmlElement"
+                },
+                {
+                    "name": "opacity",
+                    "description": "透明度，等于小于1",
+                    "type": "Number"
+                },
+                {
+                    "name": "during",
+                    "description": "动画时间",
+                    "type": "Number",
+                    "optional": true,
+                    "optdefault": "1"
+                },
+                {
+                    "name": "callback",
+                    "description": "动画结束的回调函数",
+                    "type": "Function",
+                    "optional": true
+                }
+            ],
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\points.js",
+            "line": 43,
+            "description": "设置vml中polyline的points属性动画",
+            "itemtype": "method",
+            "name": "points",
+            "params": [
+                {
+                    "name": "dom",
+                    "description": "",
+                    "type": "HtmlElement"
+                },
+                {
+                    "name": "points",
+                    "description": "points属性值，形如[{x:0, y:0}, {x: 100, y: 100}, {x:150, y:200}]",
+                    "type": "Array"
+                },
+                {
+                    "name": "方法集合，内含next(during,",
+                    "description": "callback)和prev(during, callback)方法",
+                    "type": "Object"
+                }
+            ],
+            "class": "fx",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\fx\\points.js",
+            "line": 57,
+            "description": "动画显示下一个节点",
+            "itemtype": "method",
+            "name": "next",
+            "params": [
+                {
+                    "name": "during",
+                    "description": "动画时间",
+                    "type": "Number"
+                },
+                {
+                    "name": "callback",
+                    "description": "回调函数",
+                    "type": "Function"
+                }
+            ],
+            "class": "fx",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\fx\\points.js",
+            "line": 72,
+            "description": "动画显示上一个节点",
+            "itemtype": "method",
+            "name": "prev",
+            "params": [
+                {
+                    "name": "during",
+                    "description": "动画时间",
+                    "type": "Number"
+                },
+                {
+                    "name": "callback",
+                    "description": "回调函数",
+                    "type": "Function"
+                }
+            ],
+            "class": "fx",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\fx\\zoomToggle.js",
+            "line": 18,
+            "description": "�¼���������",
+            "itemtype": "method",
+            "name": "_evtHandler",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "e",
+                    "description": "�¼�ʵ��",
+                    "type": "EventObject"
+                }
+            ],
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\fx\\zoomToggle.js",
+            "line": 41,
+            "description": "�Ŵ���С����",
+            "itemtype": "method",
+            "name": "zoomToggle",
+            "params": [
+                {
+                    "name": "$target",
+                    "description": "",
+                    "type": "JQuery����"
+                },
+                {
+                    "name": "d1",
+                    "description": "��һ���ڵĶ���ʱ��",
+                    "type": "Number",
+                    "optional": true,
+                    "optdefault": "180"
+                },
+                {
+                    "name": "d2",
+                    "description": "�ڶ����ڵĶ���ʱ��",
+                    "type": "Number",
+                    "optional": true,
+                    "optdefault": "150"
+                },
+                {
+                    "name": "t1",
+                    "description": "��һ���ڵķŴ���С����",
+                    "type": "Number",
+                    "optional": true,
+                    "optdefault": "10"
+                },
+                {
+                    "name": "t2",
+                    "description": "�ڶ����ڵķŴ���С����",
+                    "type": "Number",
+                    "optional": true,
+                    "optdefault": "6"
+                },
+                {
+                    "name": "callback",
+                    "description": "�ص�����",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": ")} �¼�����������ִ��������this�̶����䡣",
+                "type": "Function(EventObject"
+            },
+            "class": "fx",
+            "module": "lpp",
+            "submodule": "fx"
+        },
+        {
+            "file": "src\\movie\\Director.js",
+            "line": 11,
+            "itemtype": "attribute",
+            "name": "_curtainConfs 幕布动作配置项目, 元素属性：from,to,aciont(回调函数)",
+            "type": "Array",
+            "access": "private",
+            "tagname": "",
+            "class": "Scene",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Director.js",
+            "line": 17,
+            "itemtype": "attribute",
+            "name": "_defaultCurtainAction 默认的幕布动作",
+            "access": "private",
+            "tagname": "",
+            "type": "Function({Function}回调函数)",
+            "class": "Scene",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Director.js",
+            "line": 24,
+            "description": "根据来源fragment和目的key获取幕布动作",
+            "itemtype": "method",
+            "name": "_getCutainAction",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "from",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "to",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "幕布动作",
+                "type": "Function"
+            },
+            "class": "Scene",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Director.js",
+            "line": 43,
+            "description": "封装转场动作，加入挂、卸幕布动作",
+            "itemtype": "method",
+            "name": "_assemblePromiseAction",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "oriAction",
+                    "description": "函数返回结果为jQuery的deferred对象, 对象的then函数返回值为Scene实例",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Function"
+            },
+            "class": "Scene",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Director.js",
+            "line": 75,
+            "description": "初始化导演",
+            "itemtype": "method",
+            "name": "init",
+            "params": [
+                {
+                    "name": "script",
+                    "description": "场景脚本",
+                    "type": "Array"
+                },
+                {
+                    "name": "curtainConfs",
+                    "description": "幕布动作映射表,元素属性：from,to,action({Function} 回调函数)",
+                    "type": "Array"
+                },
+                {
+                    "name": "defaultCurtainAction",
+                    "description": "默认幕布动作",
+                    "type": "Function"
+                }
+            ],
+            "class": "Scene",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Director.js",
+            "line": 93,
+            "description": "话剧开始",
+            "itemtype": "method",
+            "name": "action",
+            "class": "Scene",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Director.js",
+            "line": 111,
+            "description": "切换场景",
+            "itemtype": "method",
+            "name": "redirect",
+            "params": [
+                {
+                    "name": "key,",
+                    "description": "场景标识",
+                    "type": "String"
+                },
+                {
+                    "name": "params,",
+                    "description": "场景特性",
+                    "type": "Object"
+                }
+            ],
+            "class": "Scene",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Director.js",
+            "line": 129,
+            "description": "设置收起幕布动作, 用于在_assemblePromiseAction所封装的转场动作中收起幕布",
+            "itemtype": "method",
+            "name": "setHideCurtain",
+            "params": [
+                {
+                    "name": "fn,",
+                    "description": "收起幕布动作",
+                    "type": "Function"
+                }
+            ],
+            "class": "Scene",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Director.js",
+            "line": 138,
+            "description": "设置切换失败的处理函数",
+            "itemtype": "property",
+            "name": "err",
+            "class": "Scene",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Scene.js",
+            "line": 9,
+            "description": "HTML模板",
+            "itemtype": "attribute",
+            "name": "HTML",
+            "access": "private",
+            "tagname": "",
+            "readonly": "",
+            "type": "String",
+            "class": "Scene",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Scene.js",
+            "line": 30,
+            "description": "添加精灵到场景",
+            "itemtype": "method",
+            "name": "append",
+            "params": [
+                {
+                    "name": "spirit",
+                    "description": "精灵实例",
+                    "type": "Spirit"
+                }
+            ],
+            "class": "Scene",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Spirit.js",
+            "line": 10,
+            "description": "HTML模板",
+            "itemtype": "attribute",
+            "name": "HTML",
+            "type": "String",
+            "readonly": "",
+            "class": "Spirit",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Stage.js",
+            "line": 14,
+            "description": "HTML模板",
+            "itemtype": "attribute",
+            "name": "HTML",
+            "readonly": "",
+            "type": "String",
+            "class": "Stage",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Stage.js",
+            "line": 25,
+            "itemtype": "attribute",
+            "name": "_curtains 幕布集合, 格式：幕布名: 幕布实例",
+            "access": "private",
+            "tagname": "",
+            "type": "Object",
+            "class": "Stage",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Stage.js",
+            "line": 31,
+            "itemtype": "attribute",
+            "name": "DEFAULT_CURTAIN_NAME 默认幕布名",
+            "access": "private",
+            "tagname": "",
+            "readonly": "",
+            "type": "String",
+            "class": "Stage",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Stage.js",
+            "line": 47,
+            "description": "初始化舞台实例",
+            "itemtype": "method",
+            "name": "init",
+            "params": [
+                {
+                    "name": "layoutConf",
+                    "description": "属性：style,top,left,width,height",
+                    "type": "Object"
+                },
+                {
+                    "name": "curtains",
+                    "description": "格式：幕布名: 幕布实例",
+                    "type": "Object"
+                }
+            ],
+            "class": "Stage",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Stage.js",
+            "line": 68,
+            "description": "将舞台附加到dom树",
+            "itemtype": "method",
+            "name": "attach",
+            "params": [
+                {
+                    "name": "parent",
+                    "description": "",
+                    "type": "String|HtmlElement|jQuery对象"
+                }
+            ],
+            "class": "Stage",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Stage.js",
+            "line": 80,
+            "description": "挂幕布",
+            "itemtype": "method",
+            "name": "showCurtain",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "幕布名称",
+                    "type": "String"
+                },
+                {
+                    "name": "during",
+                    "description": "动画时间",
+                    "type": "Number"
+                }
+            ],
+            "class": "Stage",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\movie\\Stage.js",
+            "line": 90,
+            "description": "卸载幕布",
+            "itemtype": "method",
+            "name": "hideCurtain",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "幕布名称",
+                    "type": "String"
+                },
+                {
+                    "name": "during",
+                    "description": "动画时间",
+                    "type": "Number"
+                },
+                {
+                    "name": "callback",
+                    "description": "回调函数",
+                    "type": "Function"
+                }
+            ],
+            "class": "Stage",
+            "module": "lpp",
+            "submodule": "movie"
+        },
+        {
+            "file": "src\\router\\private\\AssembleRoute.js",
+            "line": 3,
+            "params": [
+                {
+                    "name": "key",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "action",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "parseMapKey2Entry",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "路由信息",
+                "type": "Object"
+            },
+            "class": "Polyline",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\router\\private\\AssembleRoute.js",
+            "line": 21,
+            "params": [
+                {
+                    "name": "key",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "action",
+                    "description": "",
+                    "type": "Function"
+                },
+                {
+                    "name": "parseMapKey2Entry",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "路由信息, 内含hasRegExp和route属性",
+                "type": "Object"
+            },
+            "class": "Polyline",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\router\\private\\AssembleRoute.js",
+            "line": 51,
+            "params": [
+                {
+                    "name": "key",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "parseMapKey2Entry",
+                    "description": "",
+                    "type": "Function"
+                }
+            ],
+            "return": {
+                "description": "路由信息, 内含hasRegExp和route属性",
+                "type": "Object"
+            },
+            "class": "Polyline",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\router\\AspxStyle.js",
+            "line": 9,
+            "params": [
+                {
+                    "name": "obj",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "Polyline",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\router\\AspxStyle.js",
+            "line": 21,
+            "params": [
+                {
+                    "name": "fragment,",
+                    "description": "形如Index.aspx?id=1&Type=2",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": ", 形如{id: index.aspx, keyVal: {id:1, Type:2}}",
+                "type": "Object"
+            },
+            "class": "Polyline",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\router\\AspxStyle.js",
+            "line": 56,
+            "params": [
+                {
+                    "name": "curUrl,",
+                    "description": "当前URL信息(已经进行toLocaleLowerCase处理)",
+                    "type": "Object"
+                },
+                {
+                    "name": "id,",
+                    "description": "fragment分解出的id(已经进行toLocaleLowerCase处理)",
+                    "type": "String"
+                },
+                {
+                    "name": "strRoutes,",
+                    "description": "全字符串路由信息集合(已经进行toLocaleLowerCase处理)",
+                    "type": "Array"
+                },
+                {
+                    "name": "isSingleMatch,",
+                    "description": "是否单匹配模式",
+                    "type": "Boolean"
+                }
+            ],
+            "return": {
+                "description": ", 匹配的路由信息集合",
+                "type": "Array"
+            },
+            "class": "Polyline",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\router\\AspxStyle.js",
+            "line": 83,
+            "params": [
+                {
+                    "name": "curUrl,",
+                    "description": "当前URL信息(已经进行toLocaleLowerCase处理)",
+                    "type": "Object"
+                },
+                {
+                    "name": "id,",
+                    "description": "fragment分解出的id(已经进行toLocaleLowerCase处理)",
+                    "type": "String"
+                },
+                {
+                    "name": "RegExpRoutes,",
+                    "description": "含正则表达式的路由信息集合(已经进行toLocaleLowerCase处理)",
+                    "type": "Array"
+                },
+                {
+                    "name": "isSingleMatch,",
+                    "description": "是否单匹配模式",
+                    "type": "Boolean"
+                }
+            ],
+            "return": {
+                "description": ", 匹配的路由信息集合",
+                "type": "Array"
+            },
+            "class": "Polyline",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\router\\AspxStyle.js",
+            "line": 115,
+            "params": [
+                {
+                    "name": "key,",
+                    "description": "形如Index.aspx?id=1&Type=2",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": ", 形如{id: 'index.aspx', paramNames: ['id', 'Type']}",
+                "type": "Object"
+            },
+            "class": "Polyline",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\router\\AspxStyle.js",
+            "line": 143,
+            "params": [
+                {
+                    "name": "fragment",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "routes,",
+                    "description": "路由信息对象，内含strRoutes和regExpRoutes两个路由信息集合",
+                    "type": "Object"
+                },
+                {
+                    "name": "isSingleMatch,",
+                    "description": "是否单匹配模式",
+                    "type": "Boolean"
+                }
+            ],
+            "return": {
+                "description": "路由回调函数集合",
+                "type": "Array"
+            },
+            "class": "Polyline",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\router\\AspxStyle.js",
+            "line": 182,
+            "params": [
+                {
+                    "name": "id",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "路由信息容器",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "Polyline",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\router\\RESTfulStyle.js",
+            "line": 9,
+            "params": [
+                {
+                    "name": "obj",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "Polyline",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\router\\RESTfulStyle.js",
+            "line": 22,
+            "params": [
+                {
+                    "name": "key,",
+                    "description": "形如Index.aspx?id=1&Type=2",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": ", 形如{id: 'index.aspx', paramNames: ['id', 'Type']}",
+                "type": "Object"
+            },
+            "class": "Polyline",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\router\\RESTfulStyle.js",
+            "line": 51,
+            "params": [
+                {
+                    "name": "fragment",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "routes,",
+                    "description": "路由信息对象，内含strRoutes和regExpRoutes两个路由信息集合",
+                    "type": "Object"
+                },
+                {
+                    "name": "isSingleMatch,",
+                    "description": "是否单匹配模式",
+                    "type": "Boolean"
+                }
+            ],
+            "return": {
+                "description": "路由回调函数集合",
+                "type": "Array"
+            },
+            "class": "Polyline",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\router\\RESTfulStyle.js",
+            "line": 142,
+            "params": [
+                {
+                    "name": "id",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "",
+                    "type": "Object"
+                },
+                {
+                    "name": "路由信息容器",
+                    "description": "",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "Polyline",
+            "module": "lpp"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 39,
+            "description": "下列属性用于兼容IE7及以下版本的浏览器",
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 46,
+            "description": "下列属性用于全局属性保存",
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 49,
+            "name": "_routes",
+            "description": "路由信息容器",
+            "access": "private",
+            "tagname": "",
+            "type": "{Object}, 内含strRoutes和regExpRoutes两个路由信息集合",
+            "example": [
+                " \nstrRoutes和regExpRoutes的内部元素为\n{\n {String} fullId\n {String|RegExp} protocol\n {String|RegExp} host\n {String|RegExp} port\n {String|RegExp} pathname\n {String|RegExp} id\n {String[]} paramNames\n {Function} action\n}\n按id的长度由长到短排序"
+            ],
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 77,
+            "name": "matchMode",
+            "description": "匹配模式（不区分大小写），s或single时表示成功匹配就中断匹配过程并调用相应的回调函数\nm或multiple表示成功匹配后调用相应的回调函数，并继续执行匹配过程并调用其余匹配成功的回调函数",
+            "access": "public",
+            "tagname": "",
+            "static": 1,
+            "type": "{String}",
+            "default": "\"s\"",
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 88,
+            "description": "各路由回调函数的第一个入参，用于函数间通讯",
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 93,
+            "description": "匹配失败的响应函数",
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 101,
+            "description": "执行action时报异常的响应函数",
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 110,
+            "description": "设置路由回调函数映射信息\n入参形式1",
+            "params": [
+                {
+                    "name": "key,",
+                    "description": "路由",
+                    "type": "String"
+                },
+                {
+                    "name": "action,",
+                    "description": "回调函数\n\n入参形式2",
+                    "type": "Function"
+                },
+                {
+                    "name": "key,",
+                    "description": "路由,内部属性protocol,host,prot,pathname,key",
+                    "type": "Object"
+                },
+                {
+                    "name": "action,",
+                    "description": "回调函数\n\n入参形式3",
+                    "type": "Function"
+                },
+                {
+                    "name": "key,",
+                    "description": "路由和回调函数,内部属性protocol,host,prot,pathname,key,action\n\n入参形式4",
+                    "type": "Object"
+                },
+                {
+                    "name": "key,",
+                    "description": "路由和回调函数集合,内部元素属性protocol,host,prot,pathname,key,action",
+                    "type": "Array"
+                }
+            ],
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 214,
+            "description": "停止监听",
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 226,
+            "description": "实现同页面hash跳转",
+            "params": [
+                {
+                    "name": "key",
+                    "description": "当key为映射关系fragment中的id;当params不存在时，key还可以为完整的fragment",
+                    "type": "String"
+                },
+                {
+                    "name": "params",
+                    "description": "",
+                    "type": "Object",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "当前路由器",
+                "type": "lpp.Router"
+            },
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 247,
+            "description": "实现不同页面的跳转",
+            "params": [
+                {
+                    "name": "url",
+                    "description": "url地址",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Undefined"
+            },
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 257,
+            "description": "单页历史接口",
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 298,
+            "name": "",
+            "description": "获取路由器的匹配模式",
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 314,
+            "params": [
+                {
+                    "name": "hash,",
+                    "description": "URL的hash",
+                    "type": "String"
+                }
+            ],
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 323,
+            "params": [
+                {
+                    "name": "hash",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 330,
+            "params": [
+                {
+                    "name": "Array",
+                    "description": "funcs, 回调函数信息体集合。回调函数信息体含action和params属性",
+                    "optional": true
+                }
+            ],
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 351,
+            "params": [
+                {
+                    "name": "fragment",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\router\\Router.js",
+            "line": 365,
+            "params": [
+                {
+                    "name": "interval",
+                    "description": "轮询时间间隔",
+                    "type": "Number",
+                    "optional": true,
+                    "optdefault": "_listenInterval"
+                }
+            ],
+            "class": "Polyline",
+            "module": "router"
+        },
+        {
+            "file": "src\\vml\\cmp\\Polyline.js",
+            "line": 10,
+            "description": "HTML模板",
+            "access": "private",
+            "tagname": "",
+            "itemtype": "attribute",
+            "name": "HTML",
+            "readonly": "",
+            "type": "{String}",
+            "class": "Polyline",
+            "module": "Polyline"
+        },
+        {
+            "file": "src\\vml\\Canvas.js",
+            "line": 30,
+            "itemtype": "property",
+            "name": "iframe IFrame对象",
+            "type": "IFrame",
+            "class": "Canvas",
+            "module": "lpp",
+            "submodule": "vml"
+        },
+        {
+            "file": "src\\vml\\Canvas.js",
+            "line": 37,
+            "description": "配置画布初始化完成回调函数",
+            "itemtype": "method",
+            "name": "ready",
+            "params": [
+                {
+                    "name": "fn",
+                    "description": "回调函数",
+                    "type": "Function"
+                }
+            ],
+            "class": "Canvas",
+            "module": "lpp",
+            "submodule": "vml"
+        },
+        {
+            "file": "src\\vml\\Canvas.js",
+            "line": 47,
+            "description": "附加画布到父节点",
+            "itemtype": "method",
+            "name": "appendTo",
+            "params": [
+                {
+                    "name": "selector",
+                    "description": "选择器字符串",
+                    "type": "String"
+                }
+            ],
+            "class": "Canvas",
+            "module": "lpp",
+            "submodule": "vml"
+        },
+        {
+            "file": "src\\vml\\Canvas.js",
+            "line": 57,
+            "description": "添加元素到画布",
+            "itemtype": "method",
+            "name": "append",
+            "params": [
+                {
+                    "name": "shape",
+                    "description": "含$属性的对象",
+                    "type": "Object"
+                }
+            ],
+            "class": "Canvas",
+            "module": "lpp",
+            "submodule": "vml"
+        },
+        {
+            "file": "src\\vml\\IFrame.js",
+            "line": 13,
+            "description": "HTML模板",
+            "access": "private",
+            "tagname": "",
+            "itemtype": "attribute",
+            "name": "HTML",
+            "readonly": "",
+            "class": "IFrame",
+            "module": "lpp",
+            "submodule": "vml"
+        },
+        {
+            "file": "src\\vml\\IFrame.js",
+            "line": 24,
+            "description": "iframe加载完毕后，获取iframe的window和document对象，并设置iframe的body的高宽",
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "_onLoad",
+            "params": [
+                {
+                    "name": "autoWidth",
+                    "description": "是否宽度自适应",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "autoHeight",
+                    "description": "是否高度自适应",
+                    "type": "Boolean"
+                }
+            ],
+            "class": "IFrame",
+            "module": "lpp",
+            "submodule": "vml"
+        },
+        {
+            "file": "src\\vml\\IFrame.js",
+            "line": 60,
+            "description": "配置IFrame初始化完成回调函数",
+            "itemtype": "method",
+            "name": "ready",
+            "params": [
+                {
+                    "name": "fn",
+                    "description": "回调函数",
+                    "type": "Function"
+                }
+            ],
+            "class": "IFrame",
+            "module": "lpp",
+            "submodule": "vml"
+        },
+        {
+            "file": "src\\vml\\IFrame.js",
+            "line": 70,
+            "description": "附加到父DOM节点",
+            "itemtype": "method",
+            "name": "appendTo",
+            "params": [
+                {
+                    "name": "parent",
+                    "description": "父节点",
+                    "type": "HtmlElement"
+                }
+            ],
+            "class": "IFrame",
+            "module": "lpp",
+            "submodule": "vml"
+        },
+        {
+            "file": "src\\vml\\IFrame.js",
+            "line": 81,
+            "description": "附加元素到iframe",
+            "itemtype": "method",
+            "name": "append",
+            "params": [
+                {
+                    "name": "含$属性的对象",
+                    "description": "或 选择器字符串 或 DOM对象",
+                    "type": "Object|String|HtmlElement"
+                }
+            ],
+            "class": "IFrame",
+            "module": "lpp",
+            "submodule": "vml"
+        },
+        {
+            "file": "src\\Array.js",
+            "line": 19,
+            "description": "将类数组转换数组",
+            "itemtype": "method",
+            "name": "toArray",
+            "params": [
+                {
+                    "name": "arrayLike",
+                    "description": "类数组",
+                    "type": "Any"
+                },
+                {
+                    "name": "startIndex",
+                    "description": "数组截取的起始索引",
+                    "type": "Number",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "数组",
+                "type": "Array"
+            },
+            "class": "Array",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Browser.js",
+            "line": 17,
+            "description": "判断IE是否低于某个版本",
+            "itemtype": "method",
+            "name": "isLtIE",
+            "params": [
+                {
+                    "name": "version",
+                    "description": "版本号",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "Browser",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Browser.js",
+            "line": 29,
+            "description": "判断是否为IE",
+            "itemtype": "method",
+            "name": "isIE",
+            "return": {
+                "description": "",
+                "type": "Boolean"
+            },
+            "class": "Browser",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Css.js",
+            "line": 12,
+            "access": "private",
+            "tagname": "",
+            "readonly": "",
+            "itemtype": "attribute",
+            "name": "COLOR_MAP 颜色映射表",
+            "class": "Css",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Css.js",
+            "line": 56,
+            "description": "处理toColorHexStr的入参",
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "_parseColor1",
+            "params": [
+                {
+                    "name": "color",
+                    "description": "<br/>\nString类型时形如#000000,yellow,rgb(123,12,31) <br/>\nObject类型时形如{red{Number}, green{Number}, blue{Number}}",
+                    "type": "Object|String"
+                }
+            ],
+            "return": {
+                "description": "形如#000000,yellow,rgb(123,12,31)",
+                "type": "String"
+            },
+            "class": "Css",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Css.js",
+            "line": 74,
+            "description": "处理toColorHexStr的入参",
+            "access": "private",
+            "tagname": "",
+            "itemtype": "method",
+            "name": "_parseColor3",
+            "params": [
+                {
+                    "name": "r",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "g",
+                    "description": "",
+                    "type": "Number"
+                },
+                {
+                    "name": "b",
+                    "description": "",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "形如rgb(123,12,31)",
+                "type": "String"
+            },
+            "class": "Css",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Css.js",
+            "line": 89,
+            "description": "将颜色转为十六进制格式",
+            "itemtype": "method",
+            "name": "toColorHexStr",
+            "params": [
+                {
+                    "name": "red",
+                    "description": "<br/>\nString类型时形如#000000,yellow,rgb(123,12,31) <br/>\nObject类型时形如{red{Number}, green{Number}, blue{Number}}",
+                    "type": "Object|String|Number"
+                },
+                {
+                    "name": "green",
+                    "description": "",
+                    "type": "Number",
+                    "optional": true
+                },
+                {
+                    "name": "blue",
+                    "description": "",
+                    "type": "Number",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "String"
+            },
+            "class": "Css",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Css.js",
+            "line": 126,
+            "description": "通过对入参进行四舍五入，获取有效的颜色值",
+            "itemtype": "method",
+            "name": "getValidColor",
+            "params": [
+                {
+                    "name": "dec",
+                    "description": "实数",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "整数",
+                "type": "Number"
+            },
+            "class": "Css",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Css.js",
+            "line": 137,
+            "description": "将颜色#000000,rgb(1,2,3),yellow等形式转换为对象{red:1,green:2,blue:3}",
+            "itemtype": "method",
+            "name": "toRGB",
+            "params": [
+                {
+                    "name": "color",
+                    "description": "形如#000000,rgb(1,2,3),yellow",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "形如{red:1,green:2,blue:3}",
+                "type": "Object"
+            },
+            "class": "Css",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\EvtQueue.js",
+            "line": 15,
+            "description": "从队列头获取第一个事件方法配置项",
+            "itemtype": "method",
+            "name": "_next",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "queue",
+                    "description": "队列",
+                    "type": "Array"
+                }
+            ],
+            "return": {
+                "description": "事件方法配置项",
+                "type": "Object"
+            },
+            "class": "EvtQueue",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\EvtQueue.js",
+            "line": 29,
+            "description": "执行事件函数",
+            "itemtype": "method",
+            "name": "_exec",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "funcConf",
+                    "description": "事件函数配置项",
+                    "type": "Object"
+                }
+            ],
+            "class": "EvtQueue",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\EvtQueue.js",
+            "line": 42,
+            "description": "释放阻塞",
+            "itemtype": "method",
+            "name": "_release",
+            "access": "private",
+            "tagname": "",
+            "class": "EvtQueue",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\EvtQueue.js",
+            "line": 59,
+            "description": "封装事件函数",
+            "itemtype": "method",
+            "name": "_assembleRegisteredFunc",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "func",
+                    "description": "原事件函数",
+                    "type": "Function"
+                },
+                {
+                    "name": "conf",
+                    "description": "事件队列的内部配置项",
+                    "type": "Object"
+                }
+            ],
+            "return": {
+                "description": "封装后的事件函数",
+                "type": "Function"
+            },
+            "class": "EvtQueue",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\EvtQueue.js",
+            "line": 76,
+            "description": "注册事件到队列管理（带事件函数的this设置）",
+            "itemtype": "method",
+            "name": "_registerWith",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "事件名",
+                    "type": "String"
+                },
+                {
+                    "name": "func",
+                    "description": "事件函数，函数签名(release, presetArgs, args)",
+                    "type": "Function"
+                },
+                {
+                    "name": "scope",
+                    "description": "this",
+                    "type": "Any",
+                    "optional": true,
+                    "optdefault": "null"
+                },
+                {
+                    "name": "presetArg*",
+                    "description": "预设置的入参值",
+                    "type": "Any",
+                    "optional": true
+                }
+            ],
+            "class": "EvtQueue",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\EvtQueue.js",
+            "line": 99,
+            "description": "注册事件到队列管理",
+            "itemtype": "method",
+            "name": "_register",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "事件名",
+                    "type": "String"
+                },
+                {
+                    "name": "func",
+                    "description": "事件函数，函数签名(release, presetArgs, args)",
+                    "type": "Function"
+                },
+                {
+                    "name": "presetArg*",
+                    "description": "预设置的入参值",
+                    "type": "Any",
+                    "optional": true
+                }
+            ],
+            "class": "EvtQueue",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\EvtQueue.js",
+            "line": 121,
+            "description": "触发事件",
+            "itemtype": "method",
+            "name": "_call",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "事件名；{Array} 多个事件名和入参，内部项{name:事件名,args:[入参...]}",
+                    "type": "String"
+                },
+                {
+                    "name": "args",
+                    "description": "入参",
+                    "type": "Any",
+                    "multiple": true
+                }
+            ],
+            "class": "EvtQueue",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\EvtQueue.js",
+            "line": 177,
+            "description": "注册事件到队列（可绑定执行上下文的this属性）",
+            "itemtype": "method",
+            "name": "registerWith",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "事件名",
+                    "type": "String"
+                },
+                {
+                    "name": "func",
+                    "description": "事件函数，函数签名(release, presetArgs, args)",
+                    "type": "Function"
+                },
+                {
+                    "name": "scope",
+                    "description": "this",
+                    "type": "Any",
+                    "optional": true,
+                    "optdefault": "null"
+                },
+                {
+                    "name": "presetArg*",
+                    "description": "预设置的入参值",
+                    "type": "Any",
+                    "optional": true
+                }
+            ],
+            "class": "EvtQueue",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\EvtQueue.js",
+            "line": 187,
+            "description": "注册事件到队列",
+            "itemtype": "method",
+            "name": "register",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "事件名",
+                    "type": "String"
+                },
+                {
+                    "name": "func",
+                    "description": "事件函数，函数签名(release, presetArgs, args)",
+                    "type": "Function"
+                },
+                {
+                    "name": "presetArg*",
+                    "description": "预设置的入参值",
+                    "type": "Any",
+                    "optional": true
+                }
+            ],
+            "class": "EvtQueue",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\EvtQueue.js",
+            "line": 196,
+            "description": "触发事件",
+            "itemtype": "method",
+            "name": "call",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "事件名；{Array} 多个事件名和入参，内部项{name:事件名,args:[入参...]}",
+                    "type": "String"
+                },
+                {
+                    "name": "args*",
+                    "description": "入参",
+                    "type": "Any",
+                    "optional": true
+                }
+            ],
+            "class": "EvtQueue",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Fn.js",
+            "line": 16,
+            "description": "延迟执行函数",
+            "itemtype": "method",
+            "name": "delay",
+            "params": [
+                {
+                    "name": "fn",
+                    "description": "函数,若类型为Object时格式就是{fn: 函数, scope: 执行上下文的this}",
+                    "type": "Function|Object"
+                },
+                {
+                    "name": "delay",
+                    "description": "延迟时间",
+                    "type": "Number",
+                    "optional": true,
+                    "optdefault": "1"
+                },
+                {
+                    "name": "params",
+                    "description": "预设置入参",
+                    "type": "Any",
+                    "multiple": true
+                }
+            ],
+            "return": {
+                "description": "延迟契约<br/>\n契约属性：<br/> \n{Object} symbol 延迟执行标识<br/>\n{Function} cancel 取消延迟执行",
+                "type": "Object"
+            },
+            "class": "Fn",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Lpp.js",
+            "line": 41,
+            "description": "字符串格式化",
+            "itemtype": "method",
+            "name": "fmt",
+            "params": [
+                {
+                    "name": "str",
+                    "description": "字符串格式",
+                    "type": "String"
+                },
+                {
+                    "name": "arg",
+                    "description": "",
+                    "type": "Any",
+                    "multiple": true
+                },
+                {
+                    "name": "格式化后的字符串",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "example": [
+                "\nvar rs = fmt('{0}-{1}', 'arg1', 'arg2');<br/>\nequal(rs, 'arg1-arg2');"
+            ],
+            "class": "lpp",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Lpp.js",
+            "line": 62,
+            "description": "HTML编码的字符串格式化",
+            "itemtype": "method",
+            "name": "fmtEncodeHTML",
+            "params": [
+                {
+                    "name": "str",
+                    "description": "字符串格式",
+                    "type": "String"
+                },
+                {
+                    "name": "arg",
+                    "description": "",
+                    "type": "Any",
+                    "multiple": true
+                },
+                {
+                    "name": "格式化后的字符串",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "example": [
+                "\nvar rs = fmt('{0}-{1}', 'arg1>', 'arg2<');<br/>\nequal(rs, 'arg1&gt;-arg2&lt;');"
+            ],
+            "class": "lpp",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Lpp.js",
+            "line": 77,
+            "description": "URI编码的字符串格式化",
+            "itemtype": "method",
+            "name": "fmtEncodeHTML",
+            "params": [
+                {
+                    "name": "str",
+                    "description": "字符串格式",
+                    "type": "String"
+                },
+                {
+                    "name": "arg",
+                    "description": "",
+                    "type": "Any",
+                    "multiple": true
+                },
+                {
+                    "name": "格式化后的字符串",
+                    "description": "",
+                    "type": "String"
+                }
+            ],
+            "example": [
+                "\nvar rs = fmt('{0}-{1}', 'arg1 arg2', 'arg3');<br/>\nequal(rs, 'arg1%20arg2-arg3');"
+            ],
+            "class": "lpp",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Lpp.js",
+            "line": 92,
+            "description": "继承辅助方法",
+            "itemtype": "method",
+            "name": "inherit",
+            "params": [
+                {
+                    "name": "child",
+                    "description": "子类",
+                    "type": "Function Constructor"
+                },
+                {
+                    "name": "parent",
+                    "description": "父类",
+                    "type": "Function Constructor"
+                }
+            ],
+            "class": "lpp",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Math.js",
+            "line": 9,
+            "description": "弧",
+            "itemtype": "attribute",
+            "name": "BOW",
+            "access": "private",
+            "tagname": "",
+            "type": "Number",
+            "class": "Math",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Math.js",
+            "line": 24,
+            "description": "指定精度，获取数据",
+            "itemtype": "method",
+            "name": "_toPrecision",
+            "access": "private",
+            "tagname": "",
+            "params": [
+                {
+                    "name": "orig",
+                    "description": "要处理的数值",
+                    "type": "Number"
+                },
+                {
+                    "name": "precision",
+                    "description": "精度",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "处理后的数值",
+                "type": "Number"
+            },
+            "class": "Math",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Math.js",
+            "line": 38,
+            "description": "cos函数",
+            "itemtype": "method",
+            "name": "cos",
+            "params": [
+                {
+                    "name": "angle",
+                    "description": "角度",
+                    "type": "Number"
+                },
+                {
+                    "name": "precision",
+                    "description": "cos计算结果精度",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "cos计算结果",
+                "type": "Number"
+            },
+            "class": "Math",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Math.js",
+            "line": 50,
+            "description": "sin函数",
+            "itemtype": "method",
+            "name": "sin",
+            "params": [
+                {
+                    "name": "angle",
+                    "description": "角度",
+                    "type": "Number"
+                },
+                {
+                    "name": "precision",
+                    "description": "sin计算结果精度",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "sin计算结果",
+                "type": "Number"
+            },
+            "class": "Math",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Math.js",
+            "line": 62,
+            "description": "tan函数",
+            "itemtype": "method",
+            "name": "tan",
+            "params": [
+                {
+                    "name": "angle",
+                    "description": "角度",
+                    "type": "Number"
+                },
+                {
+                    "name": "precision",
+                    "description": "tan计算结果精度",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "tan计算结果",
+                "type": "Number"
+            },
+            "class": "Math",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Math.js",
+            "line": 74,
+            "description": "计算某个角度圆弧上点的top,left值",
+            "itemtype": "method",
+            "name": "calcArcXY",
+            "params": [
+                {
+                    "name": "angle",
+                    "description": "角度",
+                    "type": "Number"
+                },
+                {
+                    "name": "r",
+                    "description": "圆半径",
+                    "type": "Number"
+                },
+                {
+                    "name": "startAngle",
+                    "description": "起始角度，以时钟0点的角度为0度",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "形如{top:0, left: 0}",
+                "type": "Object"
+            },
+            "class": "Math",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Math.js",
+            "line": 116,
+            "description": "十进制换算为其他进制的形式",
+            "itemtype": "method",
+            "name": "toOtherSysStr",
+            "params": [
+                {
+                    "name": "dec",
+                    "description": "十进制数字",
+                    "type": "Number"
+                },
+                {
+                    "name": "sys",
+                    "description": "2,8,16等进制",
+                    "type": "Number"
+                },
+                {
+                    "name": "digit",
+                    "description": "其他进制字符串的最短长度, 不够最短长度时左边用0补足长度，默认不限制最短长度",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "Math",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Math.js",
+            "line": 142,
+            "description": "十进制转换为十六进制字符串",
+            "itemtype": "method",
+            "name": "toHexStr",
+            "params": [
+                {
+                    "name": "dec",
+                    "description": "十进制数字",
+                    "type": "Number"
+                },
+                {
+                    "name": "digit",
+                    "description": "十六进制字符串的最短长度, 不够最短长度时左边用0补足长度，默认不限制最短长度",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "十六进制字符串",
+                "type": "String"
+            },
+            "example": [
+                "实例：digit=3，而十六进制字符串为FF，那么返回值为0FF"
+            ],
+            "class": "Math",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Math.js",
+            "line": 155,
+            "description": "十进制转换为二进制字符串",
+            "itemtype": "method",
+            "name": "toBinaryStr",
+            "params": [
+                {
+                    "name": "dec",
+                    "description": "十进制数字",
+                    "type": "Number"
+                },
+                {
+                    "name": "digit",
+                    "description": "二进制字符串的长最短长度, 不够最短长度时左边用0补足长度，默认不限制最短长度",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "二进制字符串",
+                "type": "String"
+            },
+            "example": [
+                " 实例：digit=3，而二进制字符串为11，那么返回值为011"
+            ],
+            "class": "Math",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Math.js",
+            "line": 168,
+            "description": "其他进制转换为十进制",
+            "itemtype": "method",
+            "name": "toDec",
+            "params": [
+                {
+                    "name": "orig",
+                    "description": "其他进制的字符串",
+                    "type": "String"
+                },
+                {
+                    "name": "sys",
+                    "description": "2,8,16等进制",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "Math",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Math.js",
+            "line": 180,
+            "description": "十六进制转换为十进制",
+            "itemtype": "method",
+            "name": "hex2Dec",
+            "params": [
+                {
+                    "name": "orig",
+                    "description": "十六进制的字符串",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "Math",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Math.js",
+            "line": 191,
+            "description": "二进制转换为十进制",
+            "itemtype": "method",
+            "name": "binary2Dec",
+            "params": [
+                {
+                    "name": "orig",
+                    "description": "二进制的字符串",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Number"
+            },
+            "class": "Math",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\Math.js",
+            "line": 202,
+            "description": "四舍五入返回整数",
+            "itemtype": "method",
+            "name": "round2Int",
+            "params": [
+                {
+                    "name": "orig",
+                    "description": "原始值",
+                    "type": "Number"
+                },
+                {
+                    "name": "min",
+                    "description": "原始值",
+                    "type": "Integer"
+                },
+                {
+                    "name": "max",
+                    "description": "原始值",
+                    "type": "Integer"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Integer"
+            },
+            "class": "Math",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\shim.js",
+            "line": 15,
+            "description": "模拟Functioon.prototype.bind",
+            "itemtype": "method",
+            "name": "Function.prototype.bind",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "函数执行上下文对象的scope",
+                    "type": "Object"
+                },
+                {
+                    "name": "presetParam",
+                    "description": "预设入参",
+                    "type": "Any",
+                    "multiple": true
+                }
+            ],
+            "return": {
+                "description": "绑定scope的函数",
+                "type": "Function"
+            },
+            "class": "shim",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\shim.js",
+            "line": 33,
+            "description": "模拟Array.prototype.indexOf",
+            "itemtype": "method",
+            "name": "Array.prototype.indexOf",
+            "params": [
+                {
+                    "name": "el",
+                    "description": "检查的对象",
+                    "type": "Any"
+                },
+                {
+                    "name": "startIndex",
+                    "description": "检查的起始索引",
+                    "type": "Number",
+                    "optional": true,
+                    "optdefault": "0"
+                }
+            ],
+            "return": {
+                "description": "对象位于数组的索引，匹配失败时返回0",
+                "type": "Number"
+            },
+            "class": "shim",
+            "module": "lpp",
+            "submodule": "base"
+        },
+        {
+            "file": "src\\shim.js",
+            "line": 54,
+            "description": "模拟并整合window.getComputedStyle\n（用于获取DOM元素的标准css属性值, 若要获取filter属性则要使用dom.currentStyle.filter, IE10以下使用filter来设置透明度等样式）",
+            "itemtype": "method",
+            "name": "window.getComputedStyle",
+            "params": [
+                {
+                    "name": "dom",
+                    "description": "DOM对象",
+                    "type": "HtmlElement"
+                }
+            ],
+            "return": {
+                "description": "css属性集合",
+                "type": "Object"
+            },
+            "class": "shim",
+            "module": "lpp",
+            "submodule": "base"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\private\\AssembleRoute.js:3"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\private\\AssembleRoute.js:21"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\private\\AssembleRoute.js:51"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\AspxStyle.js:9"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\AspxStyle.js:21"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\AspxStyle.js:56"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\AspxStyle.js:83"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\AspxStyle.js:115"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\AspxStyle.js:143"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\AspxStyle.js:182"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\RESTfulStyle.js:9"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\RESTfulStyle.js:22"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\RESTfulStyle.js:51"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\RESTfulStyle.js:142"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " src\\router\\Router.js:49"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " src\\router\\Router.js:77"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\Router.js:226"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\Router.js:247"
+        },
+        {
+            "message": "unknown tag: name",
+            "line": " src\\router\\Router.js:298"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " src\\router\\Router.js:298"
+        },
+        {
+            "message": "replacing incorrect tag: parma with param",
+            "line": " src\\Css.js:56"
+        },
+        {
+            "message": "replacing incorrect tag: parma with param",
+            "line": " src\\Css.js:74"
+        },
+        {
+            "message": "replacing incorrect tag: parma with param",
+            "line": " src\\Css.js:74"
+        },
+        {
+            "message": "replacing incorrect tag: parma with param",
+            "line": " src\\Css.js:74"
+        },
+        {
+            "message": "Missing item type\nSea.js 2.1.1 | seajs.org/LICENSE.md",
+            "line": " sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js:1"
+        },
+        {
+            "message": "Missing item type\nutil-lang.js - The minimal language enhancement",
+            "line": " sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js:18"
+        },
+        {
+            "message": "Missing item type\nutil-events.js - The minimal events support",
+            "line": " sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js:39"
+        },
+        {
+            "message": "Missing item type\nutil-path.js - The utilities for operating path such as id, uri",
+            "line": " sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js:98"
+        },
+        {
+            "message": "Missing item type\nutil-request.js - The utilities for requesting script and style files\nref: tests/research/load-js-css/test.html",
+            "line": " sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js:262"
+        },
+        {
+            "message": "Missing item type\nutil-deps.js - The parser for dependencies\nref: tests/research/parse-dependencies/test.html",
+            "line": " sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js:413"
+        },
+        {
+            "message": "Missing item type\nmodule.js - The core of module loader",
+            "line": " sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js:435"
+        },
+        {
+            "message": "Missing item type\nconfig.js - The configuration for the loader",
+            "line": " sea-modules\\seajs\\seajs\\2.1.1\\sea-debug.js:840"
+        },
+        {
+            "message": "Missing item type\nThe Sea.js plugin to provide log function",
+            "line": " sea-modules\\seajs\\seajs-log\\1.0.1\\seajs-log-debug.js:2"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\private\\AssembleRoute.js:3"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\private\\AssembleRoute.js:21"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\private\\AssembleRoute.js:51"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\AspxStyle.js:9"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\AspxStyle.js:21"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\AspxStyle.js:56"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\AspxStyle.js:83"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\AspxStyle.js:115"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\AspxStyle.js:143"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\AspxStyle.js:182"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\RESTfulStyle.js:9"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\RESTfulStyle.js:22"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\RESTfulStyle.js:51"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\RESTfulStyle.js:142"
+        },
+        {
+            "message": "Missing item type\n下列属性用于兼容IE7及以下版本的浏览器",
+            "line": " src\\router\\Router.js:39"
+        },
+        {
+            "message": "Missing item type\n下列属性用于全局属性保存",
+            "line": " src\\router\\Router.js:46"
+        },
+        {
+            "message": "Missing item type\n路由信息容器",
+            "line": " src\\router\\Router.js:49"
+        },
+        {
+            "message": "Missing item type\n匹配模式（不区分大小写），s或single时表示成功匹配就中断匹配过程并调用相应的回调函数\nm或multiple表示成功匹配后调用相应的回调函数，并继续执行匹配过程并调用其余匹配成功的回调函数",
+            "line": " src\\router\\Router.js:77"
+        },
+        {
+            "message": "Missing item type\n各路由回调函数的第一个入参，用于函数间通讯",
+            "line": " src\\router\\Router.js:88"
+        },
+        {
+            "message": "Missing item type\n匹配失败的响应函数",
+            "line": " src\\router\\Router.js:93"
+        },
+        {
+            "message": "Missing item type\n执行action时报异常的响应函数",
+            "line": " src\\router\\Router.js:101"
+        },
+        {
+            "message": "Missing item type\n设置路由回调函数映射信息\n入参形式1",
+            "line": " src\\router\\Router.js:110"
+        },
+        {
+            "message": "Missing item type\n停止监听",
+            "line": " src\\router\\Router.js:214"
+        },
+        {
+            "message": "Missing item type\n实现同页面hash跳转",
+            "line": " src\\router\\Router.js:226"
+        },
+        {
+            "message": "Missing item type\n实现不同页面的跳转",
+            "line": " src\\router\\Router.js:247"
+        },
+        {
+            "message": "Missing item type\n单页历史接口",
+            "line": " src\\router\\Router.js:257"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\Router.js:314"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\Router.js:323"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\Router.js:330"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\Router.js:351"
+        },
+        {
+            "message": "Missing item type",
+            "line": " src\\router\\Router.js:365"
+        }
+    ]
+}
