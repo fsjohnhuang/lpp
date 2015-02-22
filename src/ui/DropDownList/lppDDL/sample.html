@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="test/css" href="./css/lppDDL.css" media="screen"/>
+        <script type="text/javascript" src="./js/lpp.js"></script>
+        <script type="text/javascript" src="./js/lppDDL.js"></script>
+        <script type="text/javascript">
+            var ddl = new lppDDL({itemId: "sample", selectedTxt: "选择地区", selectedVal: "-1"});
+            var dummyData1 = [{txt: "北京", val: "0"}, {txt: "上海", val: "1"}],
+            dummyData2 = [{text: "广州", value: "0"}, {text: "佛山", value: "1"}];
+            
+            window.onload = function(){
+                ddl.bind(dummyData1, "txt", "val");
+                document.body.appendChild(ddl.ddlEl);
+                
+                
+                var btn1 = document.createElement("INPUT");
+                btn1.setAttribute("type", "button");
+                btn1.setAttribute("value", "加载DummyData1数据到下拉列表！");
+                btn1.onclick = function(){
+                    ddl.bind({dataJson: function(){ return dummyData1;}, txtField: "txt", valField: "val"});
+                }
+                document.body.appendChild(btn1);
+                
+                var btn2 = document.createElement("INPUT");
+                btn2.setAttribute("type", "button");
+                btn2.setAttribute("value", "加载DummyData2数据到下拉列表！");
+                btn2.onclick = function(){
+                    ddl.bind({dataJson: function(){ return dummyData2;}});
+                }
+                document.body.appendChild(btn2);
+            };
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

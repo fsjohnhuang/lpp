@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+        <link type="text/css" rel="stylesheet" href="./css/LPPSlidePanel.css"/>
+        <script type="text/javascript" src="./js/lpp.js"></script>
+        <script type="text/javascript" src="./js/LPPSlidePanel.js"></script>
+        <script type="text/javascript">
+            var slidePanel = null;
+            window.onload = function(){
+                slidPanel = new LPPSlidePanel({
+                    itemId: "panel",
+                    useBuffer: true
+                });
+                slidPanel.bind(function(){return [{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},
+                    {text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},
+                    {text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},
+                    {text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},
+                    {text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},
+                    {text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},
+                    {text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},
+                    {text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},
+                    {text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},
+                    {text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},
+                    {text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},{text: "测试1", value: "测试1"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},{text: "测试2", value: "测试2"},
+                    {text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"},
+                    {text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"},
+                    {text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"},
+                    {text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"},
+                    {text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"},{text: "测试3", value: "测试3"}];}, "A");
+                document.body.appendChild(slidPanel.el);
+            };
+        </script>
+    </head>
+<body>
+    
+</body>
+</html>
